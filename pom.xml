@@ -145,7 +145,6 @@
                 <version>${version.com.azure.azure-identity}</version>
             </dependency>
 
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
