@@ -95,6 +95,11 @@ public class CommonIT {
     }
 
     @CitrusTestFactory
+    public Stream<DynamicTest> langchain4jIngest() {
+        return CitrusTestFactorySupport.factory(TestLoader.YAML).packageScan("langchain4j-ingest");
+    }
+
+    @CitrusTestFactory
     public Stream<DynamicTest> log() {
         return CitrusTestFactorySupport.factory(TestLoader.YAML).packageScan("log");
     }
